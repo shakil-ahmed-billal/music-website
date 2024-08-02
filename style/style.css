@@ -93,13 +93,13 @@ header{
 /* banner section style start */
 .banner{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .banner-contant{
     margin: 250px 0 0 30px;
 }
 .banner-contant>h1{
-    font-size: 7rem;
+    font-size: 6.5rem;
     background: linear-gradient(180.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0.38));
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
@@ -110,23 +110,61 @@ header{
     margin: 40px 0;
 }
 .banner-image{
-    position: relative;
-    box-sizing: border-box;
-    margin-top: 150px;
-    margin-right: 0px;
-    width: 500px;
-    height: 650px;
-    border: 1px solid rgba(255, 255, 255, 0.29);
-    border-radius: 24px;
-    background: linear-gradient(180.00deg, rgb(38, 38, 39),rgba(44, 45, 48, 0) 100%);
+    max-width: 500px;
+    margin-top: 200px;
 }
-.banner-image-logo{
-    position: absolute;
-    width: 100px;
-    top: 40%;
-    left: 40%;
-}
-.banner-image-logo>img{
+.banner-image>img{
     width: 100%;
+    height: auto;
 }
 /* banner section style end */
+/* mobile view responsive section and css style start now */
+@media screen and (max-width:576px) {
+    /* navber section */
+    .navbar{
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .navbar>h1{
+        margin: 0;
+        margin-left: 10px;
+    }
+    .nav-option{
+        display: none;
+    }
+    .btn-box{
+        margin: 0;
+        gap: 10px;
+    }
+    .btn-box>.btn{
+        border-radius: 20px;
+    }
+    /* banner section */
+    .banner{
+        flex-direction: column;
+    }
+    .banner-contant{
+        margin-top: 100px;
+    }
+    .banner-contant>h1{
+        font-size: 3rem;
+    }
+    .banner-contant>p{
+        margin: 0;
+        margin: 10px 0 20px;
+    }
+    .banner-contant>.primary-btn{
+        padding: 15px 30px;
+    }
+    .banner-image{
+        margin: 0;
+
+    }
+    .bg-color{
+        max-width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        left: -130px;
+    }
+}
+/* mobile view responsive section and css style end now */
