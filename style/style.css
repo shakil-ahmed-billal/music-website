@@ -355,6 +355,57 @@ main{
     z-index: -1;
 }
 /* latest-songs-container end */
+/* review section style start */
+.review-container-box{
+    position: relative;
+    border-radius: 32px;
+    background: linear-gradient(180.00deg, rgb(137, 32, 102),rgba(137, 32, 102, 0) 100%);
+    margin-top: 100px;
+}
+.review-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 138px 80px 138px;
+
+}
+.review-contant>h1{
+    font-size: 4rem;
+    background: linear-gradient(180.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0.38));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+.review-contant>p{
+    margin: 40px 0;
+}
+#email{
+    background: transparent;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    margin-right: 30px;
+    font-size: 20px;
+    color: white;
+}
+.text-box>i{
+    font-size: 40px;
+}
+.headphone-box{
+    position: absolute;
+    top: -13%;
+    right: 5%;
+    width: 430px;
+    height: auto;
+}
+.headphone-box>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* review section style end */
 /* mobile view responsive section and css style start now */
 @media screen and (max-width:576px) {
     /* navber section */
@@ -496,6 +547,35 @@ main{
     }
     .latest-songs-box{
         margin-top: 400px;
+    }
+    /* review container */
+    .review-container{
+        padding: 0;
+        padding: 20px 20px;
+        margin-top: 150px;
+
+    }
+    .review-contant>h1{
+        font-size: 2rem;
+        margin-top: 300px;
+        z-index: 1;
+    }
+    .review-contant>h1>br{
+        display: none;
+    }
+    #email{
+        font-size: 15px;
+    }
+    .text-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-box>i{
+        font-size: 25px;
+    }
+    .headphone-box{
+        width: 300px;
     }
 }
 /* mobile view responsive section and css style end now */
