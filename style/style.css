@@ -212,6 +212,69 @@ main{
     margin: 30px 0px 50px 0px; 
 }
 /* explore music contsiner style end */
+/* tanding music container start */
+.tanding-container-box{
+    width: 100%;
+    position: relative;
+}
+.tanding-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tanding-container>h1{
+    font-size: 4rem;
+    margin-top: 150px;
+    background: linear-gradient(180.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0.38));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+.tanding-container>p{
+    font-size: 1rem;
+    margin: 30px 0 160px;
+    text-align: center;
+}
+.tanding-music-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tanding-items{
+    padding: 40px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.03);
+}
+.tanding-items>img{
+    max-width: 180px;
+}
+.tanding-items>h3{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.tanding-items>a{
+    color: rgb(185, 185, 185);
+}
+.tanding-items>a> i{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.margin-top{
+    position: relative;
+    bottom: 80px;
+}
+.bg-color3{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 40%;
+    filter: blur(192px);
+    /* rotate: 80deg; */
+    background: conic-gradient(from -40deg at 50% 50%, rgb(0, 0, 0), rgb(1, 2, 2) , rgb(10, 12, 16) , rgba(24, 69, 124, 0.57));
+    z-index: -1;
+}
+/* tanding music container end */
 /* mobile view responsive section and css style start now */
 @media screen and (max-width:576px) {
     /* navber section */
@@ -239,6 +302,7 @@ main{
     }
     .banner-contant{
         margin-top: 100px;
+        margin-left: 15px;
     }
     .banner-contant>h1{
         font-size: 3rem;
@@ -292,6 +356,31 @@ main{
     }
     .explore-box{
         max-width: 150px;
+    }
+    /* tranding container section */
+    .margin-top{
+        bottom: 0;
+    }
+    .tanding-container>h1{
+        font-size: 2.5rem;
+        margin: 50px 0 20px;
+    }
+    .tanding-container>p{
+        margin: 0 0 30px;
+    }
+    .tanding-container>p>br{
+        display: none;
+    }
+    .tanding-music-box{
+        flex-wrap: wrap;
+
+    }
+    .tanding-items{
+        padding: 20px 10px;
+        margin-bottom: 20px;
+    }
+    .tanding-items>img{
+        width: 100px;
     }
 }
 /* mobile view responsive section and css style end now */
