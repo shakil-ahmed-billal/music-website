@@ -252,6 +252,10 @@ main{
 .tanding-items>h3{
     font-size: 1.2rem;
     margin: 10px 0;
+    background: linear-gradient(180.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0.38));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
 }
 .tanding-items>a{
     color: rgb(185, 185, 185);
@@ -381,6 +385,17 @@ main{
     }
     .tanding-items>img{
         width: 100px;
+    }
+    .tanding-items>h3{
+        font-size: 1rem;
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+    .tanding-items>p{
+        font-size: 0.8rem;
+    }
+    .tanding-items>a{
+        font-size: 0.8rem;
     }
 }
 /* mobile view responsive section and css style end now */
